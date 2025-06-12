@@ -1,6 +1,6 @@
 export class Vaga{
     //atributos
-    private id:number = 0;
+    public id:number = 0;
     nome:string = "";
     foto:string ="";
     descricao:string="";

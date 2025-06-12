@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Vaga } from 'src/app/models/vaga.model';
-import { VagasService } from 'src/app/services/vaga.service';
+import { VagasService } from 'src/app/core/services/vaga.service';
 
 @Component({
   selector: 'app-vagas',
@@ -16,7 +16,7 @@ export class VagasComponent implements OnInit{
     this.listarVagas();
   }
 
-  listarVagas(){
+  listarVagas() {
     this._vagaService.getVagas().subscribe(
       (retornaVaga) => {
         this.vagas = retornaVaga.map(
@@ -33,6 +33,5 @@ export class VagasComponent implements OnInit{
       }
     )
   }
-
 
 }

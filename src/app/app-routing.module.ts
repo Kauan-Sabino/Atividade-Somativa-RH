@@ -7,7 +7,7 @@ import { InicioComponent } from './views/inicio/inicio.component';
 
 const routes: Routes = [
   {path: '', component:InicioComponent},
-  {path: 'curriculo', component:Curriculo},
+  {path: 'curriculos', component:Curriculo},
   {path: 'vagas', component:Vaga}
 
 ]
